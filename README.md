@@ -1,9 +1,9 @@
-Function to calculate mean average precision (mAP) in CSV format for post detection prediction calculation.
+# Put panda on your head.
 
-# Requirements
+## Requirements
 
 python 3.*, numpy, cv2, 
-# Installation
+## Installation
 
 ```
 pip install panda_producer
@@ -14,8 +14,8 @@ pip install panda_producer -i https://pypi.python.org/simple
 
 ```
 
-from panda_producer import gen_panda_head
 import cv2
+from panda_producer import gen_panda_head
 
 front_img = cv2.imread("front.jpg", 0)
 res = gen_panda_head(front_img, "text", hyper=128)
